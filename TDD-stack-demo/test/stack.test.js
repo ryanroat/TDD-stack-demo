@@ -1,6 +1,18 @@
 /* eslint-disable */
+
+class Stack {
+  constructor() {
+    this.top = -1;
+    this.items = {};
+  }
+}
+
 describe('No Array Stack', () => {
-  it.todo('is created empty');
+  it('is created empty', ()=>{
+    const stack = new Stack();
+
+    expect(stack.top).toBe(-1);
+  });
 
   it.todo('can push to the top');
 
